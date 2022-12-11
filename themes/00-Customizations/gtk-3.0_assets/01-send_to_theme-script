@@ -1,0 +1,32 @@
+#!/bin/sh
+# script to move the converted files to the theme
+rm -f -r ../../../themes/02-Crunchy-orange/gtk-3.0
+rm -f -r ../../../themes/02-Crunchy-orange_SQ/gtk-3.0
+
+rm -f -r ../../../themes/03-Crunchy-blue/gtk-3.0
+rm -f -r ../../../themes/03-Crunchy-blue_SQ/gtk-3.0
+
+rm -f -r ../../../themes/04-Crunchy-grey/gtk-3.0
+rm -f -r ../../../themes/04-Crunchy-grey_SQ/gtk-3.0
+
+rm -f -r ../../../themes/05-Crunchy-green/gtk-3.0
+rm -f -r ../../../themes/05-Crunchy-green_SQ/gtk-3.0
+
+###
+
+cp -r 02-Crunchy-orange/gtk-3.0 ../../../themes/02-Crunchy-orange/
+cp -r 02-Crunchy-orange_SQ/gtk-3.0 ../../../themes/02-Crunchy-orange_SQ/
+rm -f -r 02-Crunchy-orange*
+
+cp -r 03-Crunchy-blue/gtk-3.0 ../../../themes/03-Crunchy-blue/
+cp -r 03-Crunchy-blue_SQ/gtk-3.0 ../../../themes/03-Crunchy-blue_SQ/
+rm -f -r 03-Crunchy-blue*
+
+cp -r 04-Crunchy-grey/gtk-3.0 ../../../themes/04-Crunchy-grey/
+cp -r 04-Crunchy-grey_SQ/gtk-3.0 ../../../themes/04-Crunchy-grey_SQ/
+rm -f -r 04-Crunchy-grey*
+
+cp -r 05-Crunchy-green/gtk-3.0 ../../../themes/05-Crunchy-green/
+cp -r 05-Crunchy-green_SQ/gtk-3.0 ../../../themes/05-Crunchy-green_SQ/
+rm -f -r 05-Crunchy-green*
+

@@ -1,0 +1,64 @@
+#!/bin/sh
+# script to convert and copy the gtk-3.0 assets files
+
+# remove old versions of converted files
+rm -f -r 02*
+rm -f -r 03*
+rm -f -r 04*
+rm -f -r 05*
+
+# common buttons
+mkdir -p 02-Crunchy-orange
+mkdir -p 02-Crunchy-orange/gtk-3.0
+mkdir -p 02-Crunchy-orange/gtk-3.0/assets
+cp 00-svgSource/00-common/*.svg 02-Crunchy-orange/gtk-3.0/assets
+
+## creation of other colored version folders
+cp -d -r 02-Crunchy-orange 03-Crunchy-blue
+cp -d -r 02-Crunchy-orange 04-Crunchy-grey
+cp -d -r 02-Crunchy-orange 05-Crunchy-green
+
+### orange buttons
+cp 00-svgSource/02-orange/*.svg 02-Crunchy-orange/gtk-3.0/assets
+# SQ version
+cp -d -r 02-Crunchy-orange 02-Crunchy-orange_SQ
+# css files - light version
+cp 00-svgSource/02-orange/gtk-light.css 02-Crunchy-orange/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-light.css 02-Crunchy-orange/gtk-3.0
+# css files - dark version
+cp 00-svgSource/02-orange/gtk-dark.css 02-Crunchy-orange_SQ/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-dark.css 02-Crunchy-orange_SQ/gtk-3.0
+
+### blue buttons
+cp 00-svgSource/03-blue/*.svg 03-Crunchy-blue/gtk-3.0/assets
+# SQ version
+cp -d -r 03-Crunchy-blue 03-Crunchy-blue_SQ
+# css files - light version
+cp 00-svgSource/03-blue/gtk-light.css 03-Crunchy-blue/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-light.css 03-Crunchy-blue/gtk-3.0
+# css files - dark version
+cp 00-svgSource/03-blue/gtk-dark.css 03-Crunchy-blue_SQ/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-dark.css 03-Crunchy-blue_SQ/gtk-3.0
+
+### grey buttons
+cp 00-svgSource/04-grey/*.svg 04-Crunchy-grey/gtk-3.0/assets
+# SQ version
+cp -d -r 04-Crunchy-grey 04-Crunchy-grey_SQ
+# css files - light version
+cp 00-svgSource/04-grey/gtk-light.css 04-Crunchy-grey/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-light.css 04-Crunchy-grey/gtk-3.0
+# css files - dark version
+cp 00-svgSource/04-grey/gtk-dark.css 04-Crunchy-grey_SQ/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-dark.css 04-Crunchy-grey_SQ/gtk-3.0
+
+### green buttons
+cp 00-svgSource/05-green/*.svg 05-Crunchy-green/gtk-3.0/assets
+# SQ version
+cp -d -r 05-Crunchy-green 05-Crunchy-green_SQ
+# css files - light version
+cp 00-svgSource/05-green/gtk-light.css 05-Crunchy-green/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-light.css 05-Crunchy-green/gtk-3.0
+# css files - dark version
+cp 00-svgSource/05-green/gtk-dark.css 05-Crunchy-green_SQ/gtk-3.0/gtk.css
+cp 00-svgSource/00-common/theme-dark.css 05-Crunchy-green_SQ/gtk-3.0
+

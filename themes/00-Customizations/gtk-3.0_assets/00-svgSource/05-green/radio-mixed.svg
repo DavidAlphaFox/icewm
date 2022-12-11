@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="14"
+   height="14"
+   id="svg3449"
+   version="1.1"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="radio-mixed.svg"
+   viewBox="0 0 13.124999 13.124999">
+  <defs
+     id="defs3451">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3756"
+       id="linearGradient3762"
+       x1="15.904192"
+       y1="-0.031936102"
+       x2="-0.063744344"
+       y2="15.872446"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3756">
+      <stop
+         style="stop-color:#cdcdcd;stop-opacity:1;"
+         offset="0"
+         id="stop3758" />
+      <stop
+         style="stop-color:#e5e5e5;stop-opacity:1;"
+         offset="1"
+         id="stop3760" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="60.000001"
+     inkscape:cx="1.7333333"
+     inkscape:cy="7.0000179"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3454">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-4.2915344e-6,-1039.2372)">
+    <circle
+       r="6.5624995"
+       cy="1045.7997"
+       cx="6.5625038"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/usr/share/themes/02-Crunchy-orange/gtk-3.0/assets/radio.png"
+       id="circle824"
+       style="fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:0.81949824" />
+    <path
+       style="fill:#478747;fill-opacity:1;stroke:none;stroke-width:0.8741315"
+       d="M 7 0 A 7 7 0 0 0 0 7 A 7 7 0 0 0 7 14 A 7 7 0 0 0 14 7 A 7 7 0 0 0 7 0 z M 2.3554688 6 L 11.644531 6 C 11.841112 6 12 6.1588881 12 6.3554688 L 12 7.6445312 C 12 7.8411119 11.841112 8 11.644531 8 L 2.3554688 8 C 2.1588881 8 2 7.8411119 2 7.6445312 L 2 6.3554688 C 2 6.1588881 2.1588881 6 2.3554688 6 z "
+       transform="matrix(0.93749993,0,0,0.93749993,4.2915344e-6,1039.2372)"
+       id="path2986" />
+  </g>
+</svg>

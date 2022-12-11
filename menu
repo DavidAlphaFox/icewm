@@ -1,0 +1,81 @@
+menu "Development" folder {
+    prog "Joe's Own Editor" - xterm -e joe
+    prog "Joe's Own Editor - EMACS Emulation" - xterm -e jmacs
+    prog "Joe's Own Editor - NANO/PICO Emulation" - xterm -e jpico
+    prog "Joe's Own Editor - WordStar Emulation" - xterm -e jstar
+}
+menu "Editors" folder {
+    prog "Adie" - adie
+    prog "Xfw" - xfw
+}
+menu "Games" folder {
+    menu "Board" folder {
+        prog "Xboard" - xboard
+    }
+}
+menu "Graphics" folder {
+    prog "Documentation Browser" - nscde_fvwmclnt 'Exec exec $[infostore.docsbrowser]'
+    prog "Xfi" - xfi
+}
+menu "Multimedia" folder {
+    prog "Qt V4L2 test Utility" - qv4l2
+    prog "Qt V4L2 video capture utility" - qvidcap
+    prog "Volume Control" - nscde_fvwmclnt 'Exec exec $[infostore.volumectrl]'
+}
+menu "Network" folder {
+    prog "Amfora" - xterm -e amfora
+    prog "Avahi SSH Server Browser" - bssh
+    prog "Avahi VNC Server Browser" - bvnc
+    prog "E-Mail Reader" - nscde_fvwmclnt 'Exec exec $[infostore.mailreader]'
+    prog "Firefox" - /usr/lib/firefox/firefox
+    prog "Links" - xlinks -g
+    prog "NetSurf Web Browser" - netsurf
+    prog "Web Browser" - nscde_fvwmclnt 'Exec exec $[infostore.browser]'
+}
+menu "Shells" folder {
+    prog "PathFinder" - PathFinder
+    prog "ranger" - xterm -e ranger
+    prog "Thunar File Manager" - thunar
+    prog "UXTerm" - uxterm
+    prog "Xfce Terminal" - xfce4-terminal
+    prog "Xfe" - xfe
+    prog "XTerm" - xterm
+}
+menu "System" folder {
+    menu "Settings" folder {
+        prog "ARandR" - arandr
+        prog "Customize Look and Feel" - lxappearance
+        prog "File Manager Settings" - thunar
+        prog "FOX Desktop Setup" - ControlPanel
+        prog "Fvwm Diagnostic Console" - nscde_fvwmclnt 'f_ToggleFvwmModule FvwmConsole -title \"Fvwm Diagnostic Console\" -geometry 92x22'
+        prog "GWM" - nscde_fvwmclnt 'f_ToggleFvwmFunc GWM Raise f_GWM'
+        prog "nitrogen" - nitrogen
+        prog "NsCDE Process Manager" - nscde_fvwmclnt 'f_ToggleFvwmModule FvwmScript NProcMgr $[infostore.nprocmgr.actionval] $[infostore.nprocmgr.confval]'
+        prog "Preferred Applications" - libfm-pref-apps
+        prog "Removable Drives and Media" - thunar-volman-settings
+        prog "Style Manager" - nscde_fvwmclnt 'f_ToggleFvwmModule FvwmScript StyleMgr'
+        prog "Watch Errors" - nscde_fvwmclnt 'f_ToggleFvwmFunc WatchWinMgrErrors Raise f_WatchErrors'
+        prog "Workspaces and Pages" - nscde_fvwmclnt 'f_ToggleFvwmModule FvwmScript WsPgMgr $[infostore.desknum] $[infostore.pagematrixX] $[infostore.pagematrixY]'
+        prog "Xfce Terminal Settings" - xfce4-terminal --preferences
+    }
+    prog "Avahi Zeroconf Browser" - avahi-discover
+    prog "Execute Command" - nscde_fvwmclnt 'f_ToggleFvwmFunc ExecDialog Close f_RunQuickScriptDialog ExecDialog'
+    prog "Hardware Locality lstopo" - lstopo
+    prog "Htop" - xterm -e htop
+    prog "Printer Manager" - nscde_fvwmclnt 'Exec exec $[infostore.printmgr]'
+    prog "System Action" - nscde_fvwmclnt 'f_ToggleFvwmFunc SysActionDialog Close f_RunQuickScriptDialog SysActionDialog'
+    prog "Task Manager" - nscde_fvwmclnt 'Exec exec $[infostore.taskmgr]'
+    prog "Terminal" - nscde_fvwmclnt 'Exec exec $[infostore.terminal]'
+    prog "Workstation Information" - nscde_fvwmclnt 'f_ToggleFvwmModule FvwmScript Sysinfo'
+    prog "Xfp" - xfp
+}
+menu "Utilities" folder {
+    prog "About Xfce" - xfce4-about
+    prog "Application Manager" - nscde_fvwmclnt 'Exec exec $[infostore.appmgr]'
+    prog "Calculator" - nscde_fvwmclnt 'Exec exec $[infostore.calculator]'
+    prog "Thunar File Manager" - thunar
+    prog "FOX Calculator" - calculator
+    prog "Text Editor" - nscde_fvwmclnt 'Exec exec $[infostore.xeditor]'
+}
+
+    prog "File Manager" - nscde_fvwmclnt 'Exec exec $[infostore.filemgr]'

@@ -1,0 +1,243 @@
+#!/bin/sh
+# script to convert and copy file in xfwm4 & Metacity
+
+# remove old versions of converted files
+rm -f -r 02*
+rm -f -r 03*
+rm -f -r 04*
+rm -f -r 05*
+
+# common buttons
+cd 00-svgSource/00-common
+mkdir -p xfwm4
+find . -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp "{}.svg" xfwm4/"{}.svg"
+cd xfwm4
+cp menu-active.svg menu-pressed.svg
+cp shade-active.svg shade-pressed.svg
+cp shade-toggled-active.svg shade-toggled-pressed.svg
+cp stick-active.svg stick-pressed.svg
+cp stick-toggled-active.svg stick-toggled-pressed.svg
+cp bottom-active.svg bottom-inactive.svg
+cp bottom-left-active.svg bottom-left-inactive.svg
+cp bottom-right-active.svg bottom-right-inactive.svg
+cp left-active.svg left-inactive.svg
+cp right-active.svg right-inactive.svg
+cp title-1-active.svg title-1-inactive.svg
+cp title-1-active.svg title-2-active.svg
+cp title-1-active.svg title-2-inactive.svg
+cp title-1-active.svg title-3-active.svg
+cp title-1-active.svg title-3-inactive.svg
+cp title-1-active.svg title-4-active.svg
+cp title-1-active.svg title-4-inactive.svg
+cp title-1-active.svg title-5-active.svg
+cp title-1-active.svg title-5-inactive.svg
+cp top-left-active.svg top-left-inactive.svg
+cp top-right-active.svg top-right-inactive.svg
+cd .. # parent folder: "00-common"
+cd .. # parent folder: "00-svgSource"
+cd .. # parent folder: "xfwm4-metacity"
+mkdir -p 02-Crunchy-orange
+mv 00-svgSource/00-common/xfwm4 02-Crunchy-orange
+##
+## metacity versions
+cd 02-Crunchy-orange
+mkdir -p metacity-1
+mv xfwm4/above* metacity-1/.
+cp xfwm4/close-inactive.svg metacity-1/close_unfocused.svg
+cp xfwm4/maximize-active.svg metacity-1/maximize.svg
+cp xfwm4/maximize-prelight.svg metacity-1/maximize_prelight.svg
+cp xfwm4/maximize-pressed.svg metacity-1/maximize_pressed.svg
+cp xfwm4/maximize-inactive.svg metacity-1/maximize_unfocused.svg
+cp xfwm4/hide-active.svg metacity-1/minimize.svg
+cp xfwm4/hide-prelight.svg metacity-1/minimize_prelight.svg
+cp xfwm4/hide-pressed.svg metacity-1/minimize_pressed.svg
+cp xfwm4/hide-inactive.svg metacity-1/minimize_unfocused.svg
+cp xfwm4/maximize-toggled-active.svg metacity-1/unmaximize.svg
+cp xfwm4/maximize-toggled-prelight.svg metacity-1/unmaximize_prelight.svg
+cp xfwm4/maximize-toggled-pressed.svg metacity-1/unmaximize_pressed.svg
+cp xfwm4/maximize-toggled-inactive.svg metacity-1/unmaximize_unfocused.svg
+cp xfwm4/menu-active.svg metacity-1/menu.svg
+cp xfwm4/menu-prelight.svg metacity-1/menu_prelight.svg
+cp xfwm4/menu-inactive.svg metacity-1/menu_unfocused.svg
+## symbolic links and copie of config files
+cd xfwm4
+cp ../../01-config_files/themerc .
+cd .. # parent folder: "02-Crunchy-orange"
+cd metacity-1
+cp ../../01-config_files/metacity-theme-1.xml .
+cp ../../01-config_files/metacity-theme-3.xml .
+cp ../xfwm4/shade-active.svg shade.svg
+cp ../xfwm4/shade-prelight.svg shade_prelight.svg
+cp ../xfwm4/shade-inactive.svg shade_pressed.svg
+cp ../xfwm4/shade-inactive.svg shade_unfocused.svg
+cp ../xfwm4/shade-toggled-active.svg unshade.svg
+cp ../xfwm4/shade-toggled-prelight.svg unshade_prelight.svg
+cp ../xfwm4/shade-toggled-inactive.svg unshade_pressed.svg
+cp ../xfwm4/shade-toggled-inactive.svg unshade_unfocused.svg
+cp ../xfwm4/stick-active.svg stick.svg
+cp ../xfwm4/stick-prelight.svg stick_prelight.svg
+cp ../xfwm4/stick-inactive.svg stick_pressed.svg
+cp ../xfwm4/stick-inactive.svg stick_unfocused.svg
+cp ../xfwm4/stick-toggled-active.svg unstick.svg
+cp ../xfwm4/stick-toggled-prelight.svg unstick_prelight.svg
+cp ../xfwm4/stick-toggled-inactive.svg unstick_pressed.svg
+cp ../xfwm4/stick-toggled-inactive.svg unstick_unfocused.svg
+cp menu_unfocused.svg menu_pressed.svg
+cp above_unfocused.svg above_pressed.svg
+cd .. # parent folder: "02-Crunchy-orange"
+cd .. # parent folder: "xfwm4-metacity"
+###
+### creation of other colored version folders
+cp -r 02-Crunchy-orange 03-Crunchy-blue
+cp -r 02-Crunchy-orange 04-Crunchy-grey
+cp -r 02-Crunchy-orange 05-Crunchy-green
+
+##################
+# orange buttons #
+##################
+cd 00-svgSource/02-orange
+mkdir -p xfwm4
+find . -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp "{}.svg" xfwm4/"{}.svg"
+cd .. # parent folder: "00-svgSource"
+cd .. # parent folder: "xfwm4-metacity"
+mv 00-svgSource/02-orange/xfwm4/* 02-Crunchy-orange/xfwm4
+rm -f -r 00-svgSource/02-orange/xfwm4
+##
+## metacity versions
+cd 02-Crunchy-orange
+cp -f ../00-svgSource/02-orange/thumbnail.png metacity-1/.
+cp xfwm4/close-active.svg metacity-1/close.svg
+cp xfwm4/close-prelight.svg metacity-1/close_prelight.svg
+cp xfwm4/close-pressed.svg metacity-1/close_pressed.svg
+###
+cd .. # parent folder: "xfwm4-metacity"
+
+################
+# blue buttons #
+################
+cd 00-svgSource/03-blue
+mkdir -p xfwm4
+find . -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp "{}.svg" xfwm4/"{}.svg"
+cd .. # parent folder: "00-svgSource"
+cd .. # parent folder: "xfwm4-metacity"
+mv 00-svgSource/03-blue/xfwm4/* 03-Crunchy-blue/xfwm4
+rm -f -r 00-svgSource/03-blue/xfwm4
+##
+## metacity versions
+cd 03-Crunchy-blue
+cp -f ../00-svgSource/03-blue/thumbnail.png metacity-1/.
+cp xfwm4/close-active.svg metacity-1/close.svg
+cp xfwm4/close-prelight.svg metacity-1/close_prelight.svg
+cp xfwm4/close-pressed.svg metacity-1/close_pressed.svg
+###
+cd .. # parent folder: "xfwm4-metacity"
+
+################
+# grey buttons #
+################
+cd 00-svgSource/04-grey
+mkdir -p xfwm4
+find . -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp "{}.svg" xfwm4/"{}.svg"
+cd .. # parent folder: "00-svgSource"
+cd .. # parent folder: "xfwm4-metacity"
+mv 00-svgSource/04-grey/xfwm4/* 04-Crunchy-grey/xfwm4
+rm -f -r 00-svgSource/04-grey/xfwm4
+##
+## metacity versions
+cd 04-Crunchy-grey
+cp -f ../00-svgSource/04-grey/thumbnail.png metacity-1/.
+cp xfwm4/close-active.svg metacity-1/close.svg
+cp xfwm4/close-prelight.svg metacity-1/close_prelight.svg
+cp xfwm4/close-pressed.svg metacity-1/close_pressed.svg
+###
+cd .. # parent folder: "xfwm4-metacity"
+
+#################
+# green buttons #
+#################
+cd 00-svgSource/05-green
+mkdir -p xfwm4
+find . -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp "{}.svg" xfwm4/"{}.svg"
+cd .. # parent folder: "00-svgSource"
+cd .. # parent folder: "xfwm4-metacity"
+mv 00-svgSource/05-green/xfwm4/* 05-Crunchy-green/xfwm4
+rm -f -r 00-svgSource/05-green/xfwm4
+##
+## metacity versions
+cd 05-Crunchy-green
+cp -f ../00-svgSource/05-green/thumbnail.png metacity-1/.
+cp xfwm4/close-active.svg metacity-1/close.svg
+cp xfwm4/close-prelight.svg metacity-1/close_prelight.svg
+cp xfwm4/close-pressed.svg metacity-1/close_pressed.svg
+###
+cd .. # parent folder: "xfwm4-metacity"
+
+# SQ VERSIONS
+######################
+mkdir -p 02-Crunchy-orange_SQ
+mkdir -p 02-Crunchy-orange_SQ/xfwm4
+mkdir -p 02-Crunchy-orange_SQ/metacity-1
+cd 02-Crunchy-orange_SQ/xfwm4
+cp ../../02-Crunchy-orange/xfwm4/* .
+rm close*
+rm hide*
+rm maximize*
+find ../../00-svgSource/00-common_SQ/. -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp ../../00-svgSource/00-common_SQ/"{}.svg" "{}.svg"
+cd ../metacity-1
+cp ../../02-Crunchy-orange/metacity-1/* .
+rm close*
+rm minimize*
+rm maximize*
+rm unmax*
+rm thumbnail*
+rm metacity*
+cp ../../02-Crunchy-orange/metacity-1/metacity* .
+cp ../xfwm4/close-inactive.svg close_unfocused.svg
+cp ../xfwm4/maximize-active.svg maximize.svg
+cp ../xfwm4/maximize-prelight.svg maximize_prelight.svg
+cp ../xfwm4/maximize-pressed.svg maximize_pressed.svg
+cp ../xfwm4/maximize-inactive.svg maximize_unfocused.svg
+cp ../xfwm4/hide-active.svg minimize.svg
+cp ../xfwm4/hide-prelight.svg minimize_prelight.svg
+cp ../xfwm4/hide-pressed.svg minimize_pressed.svg
+cp ../xfwm4/hide-inactive.svg minimize_unfocused.svg
+cp ../xfwm4/maximize-toggled-active.svg unmaximize.svg
+cp ../xfwm4/maximize-toggled-prelight.svg unmaximize_prelight.svg
+cp ../xfwm4/maximize-toggled-pressed.svg unmaximize_pressed.svg
+cp ../xfwm4/maximize-toggled-inactive.svg unmaximize_unfocused.svg
+cd ../..  # parent folder: "xfwm4-metacity"
+cp -r 02-Crunchy-orange_SQ 03-Crunchy-blue_SQ
+cp -r 02-Crunchy-orange_SQ 04-Crunchy-grey_SQ
+cp -r 02-Crunchy-orange_SQ 05-Crunchy-green_SQ
+
+cd 02-Crunchy-orange_SQ/xfwm4
+find ../../00-svgSource/02-orange_SQ/. -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp ../../00-svgSource/02-orange_SQ/"{}.svg" "{}.svg"
+cd ../metacity-1
+cp ../../00-svgSource/02-orange_SQ/thumbnail.png .
+cp ../xfwm4/close-active.svg close.svg
+cp ../xfwm4/close-prelight.svg close_prelight.svg
+cp ../xfwm4/close-pressed.svg close_pressed.svg
+
+cd ../../03-Crunchy-blue_SQ/xfwm4
+find ../../00-svgSource/03-blue_SQ/. -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp ../../00-svgSource/03-blue_SQ/"{}.svg" "{}.svg"
+cd ../metacity-1
+cp ../../00-svgSource/03-blue_SQ/thumbnail.png .
+cp ../xfwm4/close-active.svg close.svg
+cp ../xfwm4/close-prelight.svg close_prelight.svg
+cp ../xfwm4/close-pressed.svg close_pressed.svg
+
+cd ../../04-Crunchy-grey_SQ/xfwm4
+find ../../00-svgSource/04-grey_SQ/. -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp ../../00-svgSource/04-grey_SQ/"{}.svg" "{}.svg"
+cd ../metacity-1
+cp ../../00-svgSource/04-grey_SQ/thumbnail.png .
+cp ../xfwm4/close-active.svg close.svg
+cp ../xfwm4/close-prelight.svg close_prelight.svg
+cp ../xfwm4/close-pressed.svg close_pressed.svg
+
+cd ../../05-Crunchy-green_SQ/xfwm4
+find ../../00-svgSource/05-green_SQ/. -name "*svg" | xargs -l -i basename "{}" ".svg" | xargs -l -i cp ../../00-svgSource/05-green_SQ/"{}.svg" "{}.svg"
+cd ../metacity-1
+cp ../../00-svgSource/05-green_SQ/thumbnail.png .
+cp ../xfwm4/close-active.svg close.svg
+cp ../xfwm4/close-prelight.svg close_prelight.svg
+cp ../xfwm4/close-pressed.svg close_pressed.svg

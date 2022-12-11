@@ -1,0 +1,94 @@
+ThemeDescription = "Carbonit IceWM"
+ThemeAuthor = "Ariel Errera"
+# Theme adapted for Musix GNU+Linux by Ariel Errera.
+
+# palette:
+# text-normal: "rgb:44/44/44"
+# text-active: "rgb:e0/e0/e0"
+# text-inactive: "rgb:b2/b2/b2"
+
+Look = metal
+
+TitleButtonsSupported = "xmis"
+RolloverButtonsSupported = 0
+TitleBarJustify = 50
+TitleBarHeight = 23
+TitleBarVertOffset = 0
+BorderSizeX = 3
+BorderSizeY = 2
+CornerSizeX = 0
+CornerSizeY = 0
+DlgBorderSizeX = 3
+DlgBorderSizeY = 2
+
+#TitleBar
+ColorNormalTitleBarText = "rgb:b2/b2/b2"
+ColorActiveTitleBarText="rgb:44/44/44"
+
+#Tooltip
+ColorToolTip = "rgb:e0/e0/e0"
+ColorToolTipText = "rgb:44/44/44"
+
+#MoveSizeStatus Tooltip
+ColorMoveSizeStatus = "rgb:e0/e0/e0"
+ColorMoveSizeStatusText = "rgb:44/44/4"
+
+#Menu
+ColorNormalMenu = "rgb:e0/e0/e0"
+ColorNormalMenuItemText = "rgb:44/44/44"
+ColorActiveMenuItem = "rgb:b2/b2/b2"
+ColorActiveMenuItemText = "rgb:e0/e0/e0"
+
+#Taskbar
+ColorNormalTaskBarApp = "rgb:e0/e0/e0"
+ColorNormalTaskBarAppText = "rgb:44/44/44"
+ColorActiveTaskBarApp = "rgb:e0/e0/e0"
+ColorActiveTaskBarAppText = "rgb:44/44/44"
+ColorMinimizedTaskBarApp = "rgb:e0/e0/e0"
+ColorMinimizedTaskBarAppText = "rgb:44/44/44"
+ColorInvisibleTaskBarApp = "rgb:e0/e0/e0"
+ColorInvisibleTaskBarAppText = "rgb:e0/e0/e0"
+
+#Taskbar Buttons
+ColorNormalButton = "rgb:e0/e0/e0"
+ColorNormalButtonText = "rgb:44/44/44"
+ColorActiveButton = "rgb:e0/e0/e0"
+
+#Taskbar Workspace buttons
+ColorNormalWorkspaceButton = "rgb:e0/e0/e0"
+ColorNormalWorkspaceButtonText = "rgb:44/44/44"
+ColorActiveWorkspaceButton = "rgb:e0/e0/e0"
+ColorActiveWorkspaceButtonText = "rgb:44/44/44"
+
+#Taskbar Clock
+ColorClock = ""
+ColorClockText = "rgb:44/44/44"
+
+#Taskbar Networking
+ColorNetReceive = "rgb:b2/b2/b2"
+ColorNetSend = "rgb:ff/00/00"
+
+#QuickSwicht
+ColorQuickSwitch = "rgb:e0/e0/e0"
+ColorQuickSwitchText = "rgb:44/44/44"
+ColorQuickSwitchActive = "rgb:b2/b2/b2"
+
+
+MenuFontNameXft            = DejaVuSans:size=10
+NormalButtonFontNameXft    = DejaVuSansCondensed:size=10
+ActiveButtonFontNameXft    = DejaVuSansCondensed:size=10
+NormalWorkspaceFontNameXft = DejaVuSansCondensed:size=10
+ActiveWorkspaceFontNameXft = DejaVuSansCondensed:size=10
+NormalTaskBarFontNameXft   = DejaVuSansCondensed:size=10
+ActiveTaskBarFontNameXft   = DejaVuSansCondensed:size=10
+ToolTipFontNameXft         = DejaVuSansCondensed:size=10
+ApmFontNameXft             = DejaVuSansCondensed:size=10
+ClockFontNameXft           = DejaVuSansCondensed:size=10
+TitleFontNameXft           = DejaVuSansCondensed:size=10:bold
+MinimizedWindowFontNameXft = DejaVuSansCondensed:size=10
+QuickSwitchFontNameXft     = DejaVuSansCondensed:size=10
+ListBoxFontNameXft         = DejaVuSansCondensed:size=10
+LabelFontNameXft           = DejaVuSansCondensed:size=10
+InputFontNameXft           = DejaVuSansCondensed:size=10
+ToolButtonFontNameXft      = DejaVuSansCondensed:size=10
+StatusFontNameXft          = DejaVuSansCondensed:size=10

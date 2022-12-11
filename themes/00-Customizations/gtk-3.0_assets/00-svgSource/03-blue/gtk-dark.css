@@ -1,0 +1,39 @@
+/* color scheme */
+@define-color dark_bg_color #444;
+@define-color dark_fg_color #eee;
+
+@define-color bg_color shade(@dark_bg_color,1.25);
+@define-color fg_color @dark_fg_color;
+
+@define-color selected_bg_color #5A8CDC;
+@define-color selected_fg_color #fff;
+
+@define-color base_color shade(@fg_color,1.05);
+@define-color text_color #333;
+
+@define-color fog #fcfcfc;       /*only used with alpha opacity for a "whity" shadow*/
+@define-color shadow #030303;    /*only used with alpha opacity for a "blacky" shadow*/
+
+@define-color borders shade(@bg_color,0.85);
+
+/* misc colors used by gtk+ */
+@define-color error_color #f44336;
+@define-color info_bg_color #03a9f4;
+@define-color question_bg_color #673ab7;
+@define-color link_color #fc6f5d;
+@define-color success_color #4caf50;
+@define-color warning_color darker(#ef6c00);
+
+/* colormap actually used by the theme, to be overridden in other css files */
+@define-color theme_bg_color @bg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_text_color @text_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color theme_tooltip_bg_color @dark_bg_color;
+@define-color theme_tooltip_fg_color @dark_fg_color;
+
+
+/* @import url("theme-light.css"); */
+@import url("theme-dark.css");

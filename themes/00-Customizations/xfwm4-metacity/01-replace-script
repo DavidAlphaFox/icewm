@@ -1,0 +1,44 @@
+#!/bin/sh
+# script to move the converted files to the theme
+rm -f -r ../../02-Crunchy-orange/xfwm4
+rm -f -r ../../02-Crunchy-orange/metacity-1
+rm -f -r ../../02-Crunchy-orange/unity
+rm -f -r ../../03-Crunchy-blue/xfwm4
+rm -f -r ../../03-Crunchy-blue/metacity-1
+rm -f -r ../../03-Crunchy-blue/unity
+rm -f -r ../../04-Crunchy-grey/xfwm4
+rm -f -r ../../04-Crunchy-grey/metacity-1
+rm -f -r ../../04-Crunchy-grey/unity
+rm -f -r ../../05-Crunchy-green/xfwm4
+rm -f -r ../../05-Crunchy-green/metacity-1
+rm -f -r ../../05-Crunchy-green/unity
+rm -f -r ../../02-Crunchy-orange_SQ/xfwm4
+rm -f -r ../../02-Crunchy-orange_SQ/metacity-1
+rm -f -r ../../02-Crunchy-orange_SQ/unity
+rm -f -r ../../03-Crunchy-blue_SQ/xfwm4
+rm -f -r ../../03-Crunchy-blue_SQ/metacity-1
+rm -f -r ../../03-Crunchy-blue_SQ/unity
+rm -f -r ../../04-Crunchy-grey_SQ/xfwm4
+rm -f -r ../../04-Crunchy-grey_SQ/metacity-1
+rm -f -r ../../04-Crunchy-grey_SQ/unity
+rm -f -r ../../05-Crunchy-green_SQ/xfwm4
+rm -f -r ../../05-Crunchy-green_SQ/metacity-1
+rm -f -r ../../05-Crunchy-green_SQ/unity
+
+cp -r 02-Crunchy-orange ../../
+cp -r 02-Crunchy-orange_SQ ../../
+cp -r 03-Crunchy-blue ../../
+cp -r 03-Crunchy-blue_SQ ../../
+cp -r 04-Crunchy-grey ../../
+cp -r 04-Crunchy-grey_SQ ../../
+cp -r 05-Crunchy-green ../../
+cp -r 05-Crunchy-green_SQ ../../
+
+rm -f -r 02-Crunchy-orange
+rm -f -r 02-Crunchy-orange_SQ
+rm -f -r 03-Crunchy-blue
+rm -f -r 03-Crunchy-blue_SQ
+rm -f -r 04-Crunchy-grey
+rm -f -r 04-Crunchy-grey_SQ
+rm -f -r 05-Crunchy-green
+rm -f -r 05-Crunchy-green_SQ
